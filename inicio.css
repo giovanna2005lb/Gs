@@ -1,0 +1,100 @@
+body{
+    background: linear-gradient(to right, #219321, #2f6ced);
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgb(241, 241, 241);
+    padding: 10px 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.wrapper h2{
+    font-size: 30px;
+    color: #06264c;
+}
+
+.global{
+    position: relative;
+}
+
+.global input[type="email"],
+.global input[type="password"]{
+    border-radius: 10px;
+    background: transparent;
+    margin: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 280px;
+    height: 2px;
+    padding: 20px 40px 20px 20px;
+    backdrop-filter: blur(15px);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.global input[type="email"]:not(:focus)::placeholder,
+.global input[type="password"]:not(:focus)::placeholder{
+    transform: translateY(0%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+.global i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgb(252, 252, 252);
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+
+}
+.global input[type="email"]:focus::placeholder,
+.global input[type="password"]:focus::placeholder{
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+    font-size: 14px;
+}
+a.esqueceu{
+    text-decoration: none;
+    position: relative;
+    color: #06264c;
+}
+a.esqueceu:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+a.criar{
+    text-decoration: none;
+    color: #06264c;
+}
+a.criar:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+.wrapper .login{
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 30px;
+}
