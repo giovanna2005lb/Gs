@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/inicio.css">
+    <title>ìnicio</title>
+    <script>
+        function Redirecionar() {
+            window.location.href = "gs.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Global Maritime</h2>
+        <form onsubmit="Redirecionar(); return false;">
+            <div class="global">
+                <input type="email" id="email" placeholder="Digite seu Email" required>
+                <i class="eu"></i>
+            </div>
+            <div class="global">
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+                <i class="box"></i>
+            </div>
+            <a href="#" class="esqueceu">
+                <p>Esqueceu sua senha?</p>
+            </a>
+            <button type="submit" class="login">Login</button>
+            <p>Não tem uma conta? <a href="#" class="criar">Criar</a></p>
+        </form>
+    </div>
+    
+</body>
+</html>
