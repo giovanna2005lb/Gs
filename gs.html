@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Poluição Marinha</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="equipe.html">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Global Maritime</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Proteja nossos Oceanos</h2>
+            <p class="intro-text">Nossa empresa está comprometida em ajudar a combater a poluição marinha. Se você presenciou algum incidente ou quer relatar um problema, por favor, preencha o formulário abaixo:</p>
+            <form id="reportForm" role="form" aria-labelledby="reportFormHeading">
+                <label for="accidente">Tipo de Acidente:</label>
+                <select id="accidente" name="accidente">
+                    <option value="vazamento">Vazamento de óleo</option>
+                    <option value="despejo">Despejo de lixo</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <label for="reportDetails">Detalhes do Relatório:</label>
+                <textarea id="reportDetails" name="reportDetails" rows="4" cols="50"></textarea>
+                <button type="submit">Enviar Relatório</button>
+            </form>
+        </div>
+        <div class="oceano">
+            <p>Oceanos saudáveis são essenciais para a vida na Terra. Eles fornecem oxigênio, regulam o clima, e abrigam uma incrível variedade de vida marinha. Ajude-nos a proteger os oceanos denunciando a poluição e promovendo práticas sustentáveis.</p>
+        </div>
+            <div class="image-grid">
+                <img src="pexels-fred-zegveld-3754109-10105034.jpg" alt="Imagem 1">
+                <img src="pexels-jon-t-jonsson-311815878-20519685.jpg" alt="Imagem 2">
+                <img src="pexels-marie-claude-vergne-316473708-13740977.jpg" alt="Imagem 3">
+            </div>       
+    </main>
+    <footer>
+        <div class="container">
+            <p>Entre em contato conosco: <a href="mailto:maritime@globalmaritime.com">maritime@globalmaritime.com</a></p>
+        </div>
+    </footer>
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <h2>Enviar Mensagem</h2>
+            <form id="messageForm">
+                <label for="senderName">Seu Nome:</label>
+                <input type="text" id="senderName" name="senderName" required>
+                <label for="messageContent">Mensagem:</label>
+                <textarea id="messageContent" name="messageContent" rows="4" cols="50" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <h2>Conheça nossa equipe</h2>
+            <div class="more-team">
+                <a href="equipe.html" class="button">Ver Mais da Global Maritime</a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
